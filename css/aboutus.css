@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+.aboutus{
+    margin: 0 auto;
+    
+}
+
+.aboutus h3 {
+    text-align: center;
+    top: 170px;
+    left: 47%;
+    font-size: x-large;
+    letter-spacing: 1em;
+} 
+
+.container a {
+    text-decoration: none;
+}
+
+.profile {
+    margin: 50px auto 0;
+}
+
+table { 
+    border-collapse: collapse;
+}
+
+th {
+    background-color: rgb(189, 189, 189);
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+td{
+    text-align: center;
+}
+
+footer{
+    background-color: gray;
+    margin-top: 145px;
+}

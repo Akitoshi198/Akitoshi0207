@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+.oshinagaki {
+    background-color: #afafb0;
+    text-align: center;
+}
+
+.oshinagaki h3 {
+    font-size: larger;
+}
+
+.oshinagaki p {
+    font-size: smaller;
+}
+
+
+.menu {   
+    margin: 0 auto;
+    width: 730px;    
+}
+
+.menu1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu1 div {
+    text-align: center;
+    width: 33%;
+}
+
+.menu1 img {
+    width: 50%;
+}
+
+.menu1 p {
+    letter-spacing: .5em;
+    line-height: 3em;
+}
+
+h4 {
+    text-align: center;
+    padding: 35px 0;
+    border-bottom: solid 1px black;
+}
+
+.menu2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu2 div {
+    text-align: center;
+    width: 33%;
+}
+
+.menu2 img {
+    width: 50%;
+}
+
+.menu2 p {
+    letter-spacing: .5em;
+    line-height: 3em;
+}
+
+@media (max-width: 730px) {
+    
+    .menu {   
+        margin: 0 auto;
+        width: 100%;    
+    }
+    
+    .menu1 div,
+    .menu2 div {
+        text-align: center;
+        width: 50%;
+    }
+}
+
+
+
+

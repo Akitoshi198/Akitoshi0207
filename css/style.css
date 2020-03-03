@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+html {
+    font-family: "Sawarabi Mincho", serif;
+}
+
+* {
+    color: #333333;
+}
+
+.container h1 {
+    font-size: 40px;
+    color: #444444;
+    text-shadow: 1px 1px 0 #C0C0C0, -1px -1px 0 #C0C0C0;
+    margin-top: 0;
+    letter-spacing: 1em;
+}
+
+header p {
+    position: absolute;
+    z-index: 1;
+    top: 400px;
+    right: 530px;
+    color:#e6b422;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #333333, -1px -1px 0 #333333;
+} 
+
+.fixed{ 
+    background-color: #e6b422;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+.fixed h1 {
+    text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff;
+}
+
+a{
+    color:#424247;
+    height: 30px;
+}
+
+a:hover {
+    color:black;
+}
+
+header {
+    text-align: center;
+    
+}
+
+header h2 {
+    text-align:center;
+    width: 70%;
+    height: 120px;
+}
+
+.header-nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-nav li {
+    width: 140px;
+    text-align: center;
+}
+
+.header-nav li a {
+    text-decoration: none;
+}
+
+#logo {
+    width: 64px;
+    height: 64px;
+    letter-spacing: 3em;
+}
+
+footer {
+    background-color: gray;
+}
+
+@media (max-width: 1007px) {
+
+    .container h1 {
+        font-size: 30px;
+    }    
+
+    .header-nav li {
+        text-align: center;
+        /* float: left; */
+        background-color: #e6b422;
+    }
+
+
+} 
+
+@media (max-width: 660px) {
+
+    .container h1 {
+        font-size: 30px;
+    }
+
+    a{
+        color:#424247;
+        height: 70px;
+    }
+
+    .header-nav li {
+        text-align: center;
+        font-size: 12px;
+    }
+} 
+
+   

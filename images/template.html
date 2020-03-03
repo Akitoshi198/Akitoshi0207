@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- saved from url=(0076)file:///C:/Users/mylabo43/Desktop/05_JavaScript/rensyu/rensyu0128/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+<title>template</title>
+<link href="./template_files/style.css" rel="stylesheet" type="text/css">
+<style>
+  hr {
+    height: 3px;
+    background: black;
+  }
+</style>
+</head>
+<body>
+<header>
+<div class="header-contents">
+<h1>タイトル</h1>
+<h2>サブタイトル</h2>
+</div><!-- /.header-contents -->
+</header>
+<div class="main-wrapper">
+<section>
+  <fieldset>
+    <legend>概要</legend>
+    <h2>問題１２</h2>
+    <p>変数もデータ保存、加工に必須です。プログラムの中では様々なデータを保存し利用する場面が多々あります。</p>
+    <h2>問題１３，１４</h2>
+    <p>プロンプト自体はあまり使う場面はありませんが、似たようなことをフォームで行うことがあります。データの動き、流れを意識してください。</p>
+    <h2>問題１５</h2>
+    <p>変数の中身を比較してプログラムの進行方向を制御するため、比較を行うことも非常によくあります。</p>
+    <h2>問題１６</h2>
+    <p>型変換はあまり使う機会はそれほど多くはないですが、使わなければうまく動かないこともあります。</p>
+    <h2>問題１７～２１</h2>
+    <p>分岐はプログラムの要です。入力や操作、値の変更を察知してプログラムを分岐させることはなくてはなりません。</p>
+    <h2>問題２２、２３</h2>
+    <p>今後出てくる配列の内容を表示する際等、繰り返しは使う場面が多いです。</p>
+  </fieldset>
+  <h2>問題１２</h2>
+  <p>変数（名前は任意）を定義し、文字列「変数を使用します」を代入してください。そのあと、アラートで変数の中身を表示させてください。</p>
+  <hr>
+  <h2>問題１３</h2>
+  <p>プロンプトを使い文字を入力してもらい、変数（名前は任意）にその入力値を代入してください。そのあと、アラートで変数の中身を表示させてください。</p>
+  <hr>
+  <h2>問題１４</h2>
+  <p>プロンプトを２回使い、それぞれ別の変数（名前は任意）にその入力値を代入してください。</p>
+  <hr>
+  <h2>問題１５</h2>
+  <p>問題１４で使用した二つの変数が等しい場合は「二つの変数は等しい」、等しくない場合は「二つの変数は等しくない」とアラートで表示してください。</p>
+  <hr>
+  <h2>問題１６</h2>
+  <p>プロンプトを使い数字を入力してもらい、変数(名前は任意)に代入してください。代入する際は数値への変換をしてください。</p>
+  <hr>
+  <h2>問題１７</h2>
+  <p>問題１６で数値を代入した変数を比較演算子を使って10であれば「10を入力しないでください」とアラートで表示してください。</p>
+  <hr>
+  <h2>問題１８</h2>
+  <p>問題１６で数値を代入した変数を問題１７の分岐を経た後、10未満であれば「10未満です」とコンソールで表示してください。</p>
+  <hr>
+  <h2>問題１９</h2>
+  <p>問題１６で数値を代入した変数を問題１７，１８の分岐を経た後、10より大きく15以下であれば「10より大きく15以下です」とコンソールに表示してください。</p>
+  <hr>
+  <h2>問題２０</h2>
+  <p>問題１６で数値を代入した変数を問題１７，１８，１９の分岐を経た後、20以上で30以下であれば「20以上、30以下です」とコンソールに表示してください。</p>
+  <hr>
+  <h2>問題２１</h2>
+  <p>問題１６で数値を代入した変数を問題１７，１８，１９，２０の分岐を経た後、「よくわからなくなりました」とコンソールに表示してください。</p>
+  <hr>
+  <h2>問題２２</h2>
+  <p>whileを使って０～１００まで表示してください。</p>
+  <hr>
+  <h2>問題２３</h2>
+  <p>whileを使って０～１００までの偶数のみ表示してください。</p>
+</section>
+<script>
+
+  let answer = '変数を使用します';
+  window.alert(answer);
+
+  let answer = window.prompt('aiueo');
+  window.alert(answer);
+
+  let name = window.prompt;
+  let name1 = window.prompt;
+
+  if (name === name1) {
+    window.alert('二つの変数は等しい');
+  } else {
+    window.alert('二つの変数は等しくない');
+  }
+
+  let answer = parseInt(window.prompt());
+
+  if(answer === 10) {
+    window.alert('10を入力しないでください');
+  }
+
+  else if (answer < 10) {
+    console.log('10未満です');
+  }
+
+  else if (answer >= 10 && answer < 15) {
+    console.log('10より大きく15以下です');
+  }
+
+  else if (answer >= 20 && answer <= 30) {
+    console.log('20以上、30以下です');
+  }
+
+  else {
+    console.log('よくわからなくなりました');
+  }
+
+  let i = 0;
+  while (i <= 100) {
+  console.log(i);
+  i++;
+  }
+
+  let i = 0;
+  while (i <= 100) {
+  i = i + 2;
+  console.log(i);
+  }
+ 
+</script>
+</div><!-- /.main-wrapper -->
+<footer>JavaScript Samples</footer>
+
+
+</body></html>

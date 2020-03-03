@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+	<title>門そば</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/tokyo.css">
+</head>
+<body>
+    <div class="container">
+		<header>
+			<!-- （ロゴ） -->
+			<div class="fixed">
+				<h1><img src="images/rogo.jpeg" id="logo">門そば</h1>
+					<!-- （ナビゲーション） -->
+				<nav class="header-nav">
+                    <li><label for="top"><a href="index.html">TOP</a></label></li>
+                    <li><label for="menu"><a href="menu.html">お品書き</a></label></li>
+                    <li><label for="access"><a href="access.html">店舗案内</a></label></li>
+					<li><label for="recruitment"><a href="">求人情報はこちら</a></label></li>
+					<li><label for="inquery"><a href="inquery.html">お問い合わせ</a></li>
+				</nav>
+			</div>
+			
+		</header>
+	</div>
+	
+    <div><img src="images/ogp.jpg" name="2020" class="a2020"></div>
+    <h2>2020年東京オリンピック開催まで</h2>
+	<p class="timer1">あと<span id="day1"></span>日<span id="hour1"></span>時間<span id="min1"></span>分<span id="sec1"></span>秒</p>
+	
+	<div class="center">
+		<div>
+			<img src="images/1960sbig4.png" name="1964" id="a1964">
+		</div>
+		<ul>
+			<li><img src="images/1960s4.png" class="thumb" data-image="images/1960sbig4.png"></li>
+			<li><img src="images/1960s1.png" class="thumb" data-image="images/1960sbig1.png"></li>
+			<li><img src="images/1960s2.png" class="thumb" data-image="images/1960sbig2.png"></li>
+			<li><img src="images/1960s3.png" class="thumb" data-image="images/1960sbig3.png"></li>
+		</ul>	
+	</div>	
+    <!-- <div><img src="images/jpp002107560.jpg" name="1964" class="a1964"></div> -->
+    <h2 id="from">1964年東京オリンピック閉会から</h2>
+    <p class="timer2"><span id="year2"></span><span id="day2"></span>日<span id="hour2"></span>時間<span id="min2"></span>分<span id="sec2"></span>秒経過しました</p>
+	<p>当店は東京オリンピックを応援しています</p>
+<div id="denntaku">
+	<input type="text" id=result>
+		<div class="a">
+			<input type="button" value="*1.08" onclick="edit(this)">
+			<input type="button" value="*1.1" onclick="edit(this)">
+			<input type="button" value="" onclick="edit(this)">
+		</div>	
+		<div class="a">
+			<input type="button" value="1" onclick="edit(this)">
+			<input type="button" value="2" onclick="edit(this)">
+			<input type="button" value="3" onclick="edit(this)">
+			<input type="button" value="+" onclick="edit(this)">
+
+		</div>
+		<div class="a">
+			<input type="button" value="4" onclick="edit(this)">
+			<input type="button" value="5" onclick="edit(this)">
+			<input type="button" value="6" onclick="edit(this)">
+			<input type="button" value="-" onclick="edit(this)">
+		</div>
+		<div class="a">	
+			<input type="button" value="7" onclick="edit(this)">
+			<input type="button" value="8" onclick="edit(this)">
+			<input type="button" value="9" onclick="edit(this)">
+			<input type="button" value="/" onclick="edit(this)">
+		</div>
+		<div class="a">
+			<input type="button" value="0" onclick="edit(this)">
+			<input type="button" value="." onclick="edit(this)">
+			<input type="button" value="*" onclick="edit(this)">
+			<input type="button" value="=" onclick="calc()">
+		</div>	
+</div>		
+
+<!-- 世界時計
+ <form method="post" id="sekaitokei">
+	現在の世界の時刻です。<br>
+		<select name="select">	
+			<option value="osaka">Osaka</option>
+			<option value="london">London</option>
+			<option value="New York">New York</option>
+			<option value="Los Angeles">LOS ANGELES</option>
+			<option value="Hong Kong">HONG KONG</option>
+			<option value="Singapore">SINGAPORE</option>
+			<option value="Paris">PARIS</option>
+			<tr><td>SINGAPORE<input name="Singapore" size=8></td></tr>
+			<tr><td>SINGAPORE<input name="Singapore" size=8></td></tr>
+			<tr><td>SINGAPORE<input name="Singapore" size=8></td></tr>
+			<tr><td>SINGAPORE<input name="Singapore" size=8></td></tr>
+			<tr><td>SINGAPORE<input name="Singapore" size=8></td></tr>
+			<tr><td>SINGAPORE<input name="Singapore" size=8></td></tr>
+			<tr><td>SINGAPORE<input name="Singapore" size=8></td></tr>
+			<tr><td>SINGAPORE<input name="Singapore" size=8></td></tr>
+			<tr><td>SINGAPORE<input name="Singapore" size=8></td></tr>
+			<tr><td>SINGAPORE<input name="Singapore" size=8></td></tr>
+		</select>	
+		<input type="text" name="clock" id="text">	
+</form>  -->
+
+<!-- おみくじ -->
+<div id="btn">?</div>
+
+
+		
+<!-- （フッター） -->
+<footer>
+    <small>&copy; KADOKICHI Corporation. All Rights Reserved.</small>
+</footer>
+<script src="tokyo.js"></script>
+</body>
+</html>    

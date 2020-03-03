@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+	<title>門そば</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/inquery.css">
+    <!-- 予約システム -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/default.date.css">
+    <link rel="stylesheet" href="assets/css/default.time.css">
+
+    <script src="http://code.jquery.com/jquery-1.10-0.min.js"></script>
+    <script src="assets/pickadate/picker.js"></script>
+    <script src="assets/pickadate/picker.date.js"></script>
+    <script src="assets/pickadate/picker.time.js"></script>
+    <script src="assets/pickadate/legacy.js"></script>
+    <script src="assets/pickadate/lang-ja.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</head>	
+
+<body>
+    <div class="container">
+		<header>
+			<!-- （ロゴ） -->
+			<div class="fixed">
+				<h1><img src="images/rogo.jpeg" id="logo">門そば</h1>
+					<!-- （ナビゲーション） -->
+				<nav class="header-nav">
+                    <li><label for="top"><a href="index.html">TOP</a></li>
+					<li><label for="menu"><a href="menu.html">お品書き</a></label></li>
+					<li><label for="access"><a href="access.html">店舗案内</a></label></li>
+					<li><label for="aboutus"><a href="aboutus.html">会社概要</a></label></li>
+					<li><label for="recruitment"><a href="tokyo.html">東京オリンピック</a></label></li>	
+				</nav>
+            </div>
+        </header>    
+
+            <div class="inquery">
+                <h3>ご意見番</h3>
+                <form action="" method="post"> 
+                    <div class="kanji">
+                        <input type="text" class="sei" name="yourname" placeholder="性" required>    
+                        <input type="text" name="yourname" placeholder="名" required>
+                    </div>
+
+                    <div class="furigana">
+                        <input type="text" class="sei" name="yourname"  placeholder="性(フリガナ)" required>
+                        <input type="text" name="yourname" placeholder="名(フリガナ)" required>
+                    </div>   
+
+                    <div class="tel">
+                        <input type="tel"  placeholder="電話番号" required>
+                    </div>    
+                    <div class="email">
+                        <input type="email" name="email" placeholder="メールアドレス">
+                    </div>    
+                         
+                    <div class="gender">
+                        <label >男性<input type="radio" name="gender" value="male" checked></label>
+                        <label>女性<input type="radio" name="gender" value="female"></label>
+                    </div>    
+                        
+                    
+                    <div class="age">
+                        <select name="birth" required>
+                            <option value>選択してください</option>
+                            <option value="10">10代</option>
+                            <option value="10">20代</option>
+                            <option value="10">30代</option>
+                            <option value="10">40代</option>
+                            <option value="10">50代</option>
+                            <option value="10">60代</option>
+                            <option value="10">70代～</option>
+                        </select>
+                    </div>    
+                
+                    <textarea class="comment" name="comment" placeholder="ご意見をご記入ください"></textarea>
+                    <input type="submit" value="送信" class="submit">
+                </form>
+            </div>  
+            <script src="inquery.js">
+            </script> 
+            
+    <section class="section">
+        <div class="section_block section_block--scoped">
+            <h3>pickdate.js 予約ページ demo</h3>
+            <fieldset class="fieldset_wrapper">
+                <div class="fieldset_wrapper">
+                    <label> ■予約日 </label><br>
+                    <input id="date" class="fieldset_input js_datepicker" type="text" placeholder="Try me&hellip;"></br></br>
+                    <label> ■予約時間 </label></br>
+                    <input id="time" class="fieldset_input js_datepicker" type="text" placeholder="Try me&hellip;"></br></br>
+                    <button id="submit" class="fieldset_button button--small">予約</button>
+                </div>
+                <div id="result"></div>
+            </fieldset>
+        </div>                  
+    <footer>
+        <small>&copy; KADOKICHI Corporation. All Rights Reserved.</small>
+    </footer>
+</body>
+</html>

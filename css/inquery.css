@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+.inquery {
+    width: 360px; 
+    margin: 110px auto 0;
+    line-height: 1.5em;
+}
+
+.inquery h3 {
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 0.5em;
+}
+
+.kanji,
+.furigana {
+    display: flex;
+}
+
+.sei {
+    margin-right: 10px;
+}
+
+.kanji input,
+.furigana input,
+.tel input,
+.email input,
+.gender input,
+.gender label,
+.age select,
+.comment,
+.submit:hover {
+    cursor: pointer;
+}
+
+.kanji input,
+.furigana input,
+.tel input,
+.email input {
+    width: 170px;
+    padding-left: 5px;
+    border-radius: 3px;
+    margin: 5px 5px 5px 0;
+    border: 1.4px solid gray;
+    
+}
+
+.tel input,
+.email input {
+    width: 95%;
+    padding-left: 5px;
+    border-radius: 3px;
+    margin: 5px 10px 5px 0;
+    border: 1.4px solid gray;
+}    
+
+.gender label{
+    margin: 0 50px;
+    color: gray;
+}
+
+.gender {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.age select{
+    width: 100%;
+    color: gray;
+    margin: 3px 0 0 6px;
+}
+
+.comment {
+    width: 98%;
+    height: 10em;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 1.4px solid gray;
+    margin: 8px 0;
+}
+
+.submit {
+    width: 100%;
+    box-shadow: 3px 3px 3px gray;
+    
+    background-color: #1e90ff;
+    margin: 5px;
+    margin-bottom: 110px;
+    color: rgb(73, 73, 73);
+    
+}
+
+.submit:hover {
+    background-color:#4169e1;
+}
+
+
+
+
+
+
+
+
+
+
+
